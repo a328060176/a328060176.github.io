@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="有梦想的唐">
-    <meta name="description" content="平平淡淡，无欲无求">
+    <meta name="description" content="心心之间,念念之远">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -33,6 +33,16 @@
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(/medias/home_bg.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -147,7 +157,7 @@
         <div class="logo-name">有梦想的唐</div>
         <div class="logo-desc">
             
-            平平淡淡，无欲无求
+            心心之间,念念之远
             
         </div>
     </div>
@@ -362,7 +372,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                唐唐的boke
+                唐唐的个人空间
                 
             </div>
 
@@ -471,7 +481,7 @@ Material Design 设计
                                 
                             </div>
                             <div class="cover-btns">
-                                <a href="/2018/09/28/hexo-%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/" class="waves-effect waves-light btn"
+                                <a href="/2021/05/29/hexo-%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -553,6 +563,44 @@ Material Design 设计
                     
 
                     
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;My life
+    </div>
+    
+    <div class="row">
+		
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+		
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '/medias/home_video.mp4',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
+
+                    
 
                     
                     <div id="recommend-sections" class="recommend">
@@ -573,6 +621,66 @@ Material Design 设计
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/05/29/hexo-%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Hexo博客主题之hexo-theme-matery的介绍">
+                            
+                            <span class="card-title">Hexo博客主题之hexo-theme-matery的介绍</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                English Document | 演示示例 | QQ交流群:926552981
+
+这是一个采用Material Design和响应式设计的 Hexo 博客主题。
+
+特性
+简单漂亮，文章内容美观易读
+Material Design 设计
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-29
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Hexo/">
+                            <span class="chip bg-color">Hexo</span>
+                        </a>
+                        
+                        <a href="/tags/hexo-theme-matery/">
+                            <span class="chip bg-color">hexo-theme-matery</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
             
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
@@ -600,72 +708,12 @@ Material Design 设计
                             <span class="publish-author">
                                 
                                 <i class="fas fa-user fa-fw"></i>
-                                有梦想的唐
+                                唐
                                 
                             </span>
                         </div>
                     </div>
 
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/09/28/hexo-%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Hexo博客主题之hexo-theme-matery的介绍">
-                            
-                            <span class="card-title">Hexo博客主题之hexo-theme-matery的介绍</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                English Document | 演示示例 | QQ交流群:926552981
-
-这是一个采用Material Design和响应式设计的 Hexo 博客主题。
-
-特性
-简单漂亮，文章内容美观易读
-Material Design 设计
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Hexo/">
-                            <span class="chip bg-color">Hexo</span>
-                        </a>
-                        
-                        <a href="/tags/hexo-theme-matery/">
-                            <span class="chip bg-color">hexo-theme-matery</span>
-                        </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -744,7 +792,7 @@ Material Design 设计
                 <span id="year">2019-2021</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">有梦想的唐</a>
+            <a href="/about" target="_blank">唐</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
